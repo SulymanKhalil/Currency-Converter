@@ -41,6 +41,9 @@ const CurrencyConverter = () => {
       if (amount && rate) {
          setConverted((amount * rate).toFixed(2))
       }
+      if(!amount){
+         setConverted("")
+      }
    }, [amount, rate])
 
    return (
