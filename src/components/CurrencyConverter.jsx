@@ -69,7 +69,7 @@ const CurrencyConverter = () => {
             </div>
          </div>
          <div className="flex justify-center my-3 mb-6 relative">
-            <hr className="w-full border-gray-200"/>
+            <hr className="w-full border-gray-200" />
             <i class="fa-solid fa-right-left fa-rotate-90 text-indigo-500 absolute bg-white px-2 text-sm"></i>
          </div>
          <div className="mb-5">
@@ -90,15 +90,15 @@ const CurrencyConverter = () => {
                <input
                   type="number"
                   placeholder="Converted Amount"
-                  value={converted} 
+                  value={converted}
                   className="w-full text-right bg-transparent focus:outline-none text-gray-700 text-sm"
                   readOnly
                />
             </div>
          </div>
          <div className="text-center">
-         <p className="text-xs text-gray-500">Indicative Exchange rate</p>
-         <p className="text-sm font-semibold txt-gray-700 mt-1">1 {from} = {rate ? rate.toFixed(2) : "..."} {to}</p>
+            <p className="text-xs text-gray-500">Indicative Exchange rate</p>
+            <p className="text-sm font-semibold txt-gray-700 mt-1">1 {from} = <span className="text-indigo-500">{rate ? rate.toFixed(2) : "..."}</span> {to}</p>
          </div>
       </div>
    )
