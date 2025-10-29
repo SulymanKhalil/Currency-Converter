@@ -76,7 +76,7 @@ const CurrencyConverter = () => {
             <i class="fa-solid fa-right-left fa-rotate-90 text-indigo-500 absolute bg-white px-2 text-sm"></i>
          </div>
          <div className="mb-5">
-            <p className="text-sm text-gray-600 mb-1 ">To convert</p>
+            <p className="text-gray-600 mb-1">To Convert</p>
             <div className="flex items-center bg-gray-50 rounded-xl px-3 py-2 shadow-inner">
                <img src={`https://flagsapi.com/${countryMap[to]}/flat/32.png`} alt="flag" className="rounded-sm" />
                <select
